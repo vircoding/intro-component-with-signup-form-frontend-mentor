@@ -20,6 +20,10 @@
     box-sizing: border-box;
 }
 
+.hidden {
+    display: none;
+}
+
 body {
     min-width: 375px;
     min-height: 1000px;
@@ -117,6 +121,14 @@ body {
     color: hsl(240, 1%, 45%);
 }
 
+.error-Icon {
+    width: 21px;
+}
+
+.borderError {
+    box-shadow: inset 0 0 0 2px var(--red);
+}
+
 .form-error {
     color: var(--red);
     text-align: right;
@@ -158,6 +170,20 @@ body {
     color: var(--red);
 }
 
+/* Active States */
+.anchor:hover {
+    text-decoration: underline;
+}
+
+.form-submit:hover {
+    cursor: pointer;
+}
+
+.form-submit:active {
+    background-color: hsl(154, 79%, 59%);
+}
+
+/* Media Queries */
 @media (min-width: 720px) {
     body {
         min-height: initial;
@@ -187,5 +213,9 @@ body {
 
     .rightPanel {
         padding: 0;
+    }
+
+    .form {
+        padding: 40px;
     }
 }

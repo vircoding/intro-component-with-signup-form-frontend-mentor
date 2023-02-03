@@ -19,47 +19,88 @@
         <div class="rightPanel">
             <div class="rightPanel-plan boxShadows">
                 <p class="plan-text">
-                    <a href="#" class="plan-bold">Try it free 7 days</a>
+                    <a href="#" class="plan-bold anchor">Try it free 7 days</a>
                     then $20/mo. thereafter
                 </p>
             </div>
-            <form class="form boxShadows">
+            <form class="form boxShadows" id="form" novalidate>
                 <div class="form-item">
                     <div class="form-inputContainer">
-                        <input type="text" placeholder="First Name" class="form-input" />
-                        <img src="./images/icon-error.svg" alt="Error Icon" />
+                        <input
+                            type="text"
+                            placeholder="First Name"
+                            class="form-input"
+                            id="firstName"
+                        />
+                        <img
+                            src="./images/icon-error.svg"
+                            alt="Error Icon"
+                            class="error-Icon hidden"
+                            id="firstError"
+                        />
                     </div>
-                    <p class="form-error">First Name cannot be empty</p>
+                    <p class="form-error hidden" id="firstInfo">First Name cannot be empty</p>
                 </div>
                 <div class="form-item">
                     <div class="form-inputContainer">
-                        <input type="text" placeholder="Last Name" class="form-input" />
-                        <img src="./images/icon-error.svg" alt="Error Icon" />
+                        <input
+                            type="text"
+                            placeholder="Last Name"
+                            class="form-input"
+                            id="lastName"
+                        />
+                        <img
+                            src="./images/icon-error.svg"
+                            alt="Error Icon"
+                            class="error-Icon hidden"
+                            id="lastError"
+                        />
                     </div>
-                    <p class="form-error">Last Name cannot be empty</p>
+                    <p class="form-error hidden" id="lastInfo">Last Name cannot be empty</p>
                 </div>
                 <div class="form-item">
                     <div class="form-inputContainer">
-                        <input type="email" placeholder="Email Address" class="form-input" />
-                        <img src="./images/icon-error.svg" alt="Error Icon" />
+                        <input
+                            type="email"
+                            placeholder="Email Address"
+                            class="form-input"
+                            id="email"
+                        />
+                        <img
+                            src="./images/icon-error.svg"
+                            alt="Error Icon"
+                            class="error-Icon hidden"
+                            id="emailError"
+                        />
                     </div>
-                    <p class="form-error">Looks like this is not an email</p>
+                    <p class="form-error hidden" id="emailInfo">Looks like this is not an email</p>
                 </div>
                 <div class="form-item">
                     <div class="form-inputContainer">
-                        <input type="password" placeholder="Password" class="form-input" />
-                        <img src="./images/icon-error.svg" alt="Error Icon" />
+                        <input
+                            type="password"
+                            placeholder="Password"
+                            class="form-input"
+                            id="password"
+                        />
+                        <img
+                            src="./images/icon-error.svg"
+                            alt="Error Icon"
+                            class="error-Icon hidden"
+                            id="passwordError"
+                        />
                     </div>
-                    <p class="form-error">Password cannot be empty</p>
+                    <p class="form-error hidden" id="passwordInfo">Password cannot be empty</p>
                 </div>
                 <button type="submit" class="form-submit">
                     <p class="submit-text">Claim your free trial</p>
                 </button>
                 <p class="form-terms">
                     By clicking the button, you are agreeing to our
-                    <a href="#" class="terms-bold">Terms and Services</a>
+                    <a href="#" class="terms-bold anchor">Terms and Services</a>
                 </p>
             </form>
         </div>
+        <script src="./js/script.js"></script>
     </body>
 </html>
